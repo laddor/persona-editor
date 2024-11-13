@@ -1,0 +1,113 @@
+.content {
+  padding-top: 40px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    max-width: 33px;
+    max-height: 33px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: -0.01em;
+  color: #1C1C1C;
+}
+
+.cardsContainer {
+  background: #f3eeec;
+  border-radius: 16px;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    background-color: #DED7D5 ;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+.cards {
+  width: 100%;
+  background-color: #F3EEEC;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.addCardMenu {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.cardsWrapper {
+  flex: 1;
+  position: relative;
+  overflow: visible;
+  padding: 16px;
+
+  &:hover .addCardMenu {
+    display: block;
+  }
+
+  .avatar {
+    width: 68px;
+    height: 68px;
+
+    & svg {
+      max-width: 54px;
+      max-height: 48px;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    border-top: 2px solid black;
+  }
+}
+
+.card {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  position: relative;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .2);
+  padding: 12px;
+
+  .title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin: 0;
+  }
+}
+

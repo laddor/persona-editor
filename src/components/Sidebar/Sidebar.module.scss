@@ -1,0 +1,13 @@
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+
+    .list-group-item {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e9ecef;
+        }
+    }
+}

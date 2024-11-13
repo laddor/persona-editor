@@ -1,0 +1,21 @@
+.dropdownContainer {
+  position: absolute;
+  border-top: 2px solid #222ADD;
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 6px);
+  bottom: -37px;
+
+  &.columnOne {
+    bottom: -37px;
+    left: 7px;
+  }
+
+  &.columnTwo {
+    left: -10px;
+  }
+}
+
+.addCardButton {
+  background-color: #f8f9fa;
+}
